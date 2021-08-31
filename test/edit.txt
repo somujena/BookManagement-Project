@@ -1,0 +1,83 @@
+<div class="media-right">
+            <p class="buttons">
+              <button class="button is-small" >
+                <span class="icon">
+                  <i class="fas fa-pen-square"></i>
+                </span>
+                <span>Edit</span>
+              </button>
+            </p>
+ </div>
+
+<script>
+    function func1() {
+      <div class="box">
+        I'm in a box.
+      </div>
+    }
+    </script>
+
+
+<% layout('layout/boilerplate') -%>
+<div class="columns is-mobile">
+  <div class="column is-half is-offset-one-quarter">
+    <h1 class="title">create a new post</h1>
+    <form action="/posts" method="POST">
+      <div class="field">
+        <label for="author" class="label">Author</label>
+        <div class="control">
+          <input class="input" type="text" id="author" name="post[author]" />
+        </div>
+      </div>
+      <div class="field">
+        <label for="title" class="label">Title</label>
+        <div class="control">
+          <input class="input" type="text" id="title" name="post[title]" />
+        </div>
+      </div>
+      <div class="field">
+        <label for="body" class="label">body</label>
+        <div class="control">
+          <textarea
+            class="textarea"
+            rows="5"
+            id="body"
+            name="post[body]"
+          ></textarea>
+        </div>
+      </div>
+      <div class="field">
+        <div class="control">
+          <button class="button is-primary">ADD</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<div class="columns is-mobile">
+    <div class="column is-6 is-offset-3">
+        <form action="/posts/<%=post.id%>" method="POST">
+            <label>author</label>
+            <input type="text" name="post[author]" value="<%=post.author%>">
+            <label>title</label>
+            <input type="text" name="post[title]" value="<%=post.title%>">
+            <label>body</label>
+            <input type="text" name="post[body]" value="<%=post.body%>">
+            <button class="button">submit</button>
+        </form>
+    </div>
+</div>
+
+
+action="/posts/<%=post.id%>?_method=PUT"
+                method="POST"
+                enctype="multipart/form-data"
+
+action="/posts" method="POST" enctype="multipart/form-data"
+
+
+
+
+"https://images.unsplash.com/photo-1515549832467-8783363e19b6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1782&q=80"
